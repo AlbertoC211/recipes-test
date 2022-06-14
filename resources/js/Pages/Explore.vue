@@ -13,9 +13,9 @@
                     Look at these examples
                 </template>
                 <template #default>
-                    <base-recipe-card></base-recipe-card>
+                    <base-recipe-card-explore></base-recipe-card-explore>
 
-                    <base-recipe-card color="bg-gray-100">
+                    <base-recipe-card-explore color="bg-gray-100">
                         <template #image>
                             <img
                                 class="lg:h-72 md:h-48 w-full object-cover object-center"
@@ -34,9 +34,9 @@
                             <div class="bg-cover bg-center w-10 h-10 rounded-full mr-3" style="background-image: url(https://picsum.photos/id/433/4752/3168)"></div>
                         </template>
                         <template #user>Fernando Domingo</template>
-                    </base-recipe-card>
+                    </base-recipe-card-explore>
 
-                    <base-recipe-card>
+                    <base-recipe-card-explore>
                         <template #image>
                             <img
                                 class="lg:h-72 md:h-48 w-full object-cover object-center"
@@ -55,7 +55,7 @@
                             <div class="bg-cover bg-center w-10 h-10 rounded-full mr-3" style="background-image: url(https://picsum.photos/id/447/1280/853)"></div>
                         </template>
                         <template #user>Carlos Fuentes</template>
-                    </base-recipe-card>
+                    </base-recipe-card-explore>
                 </template>
             </base-three-grid>
         </template>
@@ -66,7 +66,7 @@
 import { defineComponent } from 'vue';
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import BaseThreeGrid from "@/Shared/BaseThreeGrid";
-import BaseRecipeCard from "@/Shared/BaseRecipeCard";
+import BaseRecipeCardExplore from "@/Shared/BaseRecipeCardExplore";
 import Layout from "@/Shared/Layout";
 
 export default defineComponent({
@@ -74,7 +74,7 @@ export default defineComponent({
         Head,
         Link,
         BaseThreeGrid,
-        BaseRecipeCard,
+        BaseRecipeCardExplore,
         Layout,
     },
 });

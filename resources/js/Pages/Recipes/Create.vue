@@ -22,7 +22,7 @@
                     <select-input v-model="form.type" :error="form.errors.type" class="pb-8 pr-6 w-full lg:w-1/2" label="Type">
                         <option v-for="tp in type" :key="tp.id" :value="tp.id">{{ tp.type }}</option>
                     </select-input>
-                    <file-input v-model="form.photo" :error="form.errors.photo" class="pb-8 pr-6 w-full lg:w-1/2" type="file" accept="image/*" label="Photo" id="photo" />
+                    <file-input-photo v-model="form.photo" :error="form.errors.photo" class="pb-8 pr-6 w-full lg:w-1/2" type="file" accept="image/*" label="Photo" id="photo" />
                     <select-input multiple v-model="form.ingredients" :error="form.errors.ingredients" class="pb-8 pr-6 w-full lg:w-1/2" label="Ingredients" name="ingredients[]">
                         <option v-for="ingredient in ingredients" :key="ingredient.id" :value="ingredient.name">{{ ingredient.name }}</option>
                     </select-input>
@@ -40,6 +40,7 @@ import { Head, Link } from '@inertiajs/inertia-vue3'
 import AppLayout from '@/Shared/AppLayout.vue';
 import TextInput from '@/Shared/TextInput.vue';
 import FileInput from '@/Shared/FileInput.vue';
+import FileInputPhoto from '@/Shared/FileInputPhoto.vue';
 import LoadingButton from '@/Shared/LoadingButton.vue';
 import SelectInput from '@/Shared/SelectInput';
 
@@ -51,6 +52,7 @@ export default {
         LoadingButton,
         TextInput,
         SelectInput,
+        FileInputPhoto,
     },
     props: {
         difficulty: Array,
