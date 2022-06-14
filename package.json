@@ -15,7 +15,7 @@
         "@inertiajs/progress": "^0.2.7",
         "@tailwindcss/forms": "^0.5.2",
         "@tailwindcss/typography": "^0.5.2",
-        "@vue/compiler-sfc": "^3.2.31",
+        "@vue/compiler-sfc": "^3.2.37",
         "laravel-mix": "^6.0.44",
         "lodash": "^4.17.19",
         "postcss": "^8.4.14",
